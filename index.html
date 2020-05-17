@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="content-wrap">
+        <div class="header">
+          <div class="logo"></div>
+          <h1>Pavlek Cipher</h1>
+        </div>
+        <div id="container" class="container">
+          <textarea
+            id="input-field"
+            style="resize: none; overflow: hidden;"
+            class="text-field"
+            placeholder="Content to encrypt..."
+          ></textarea>
+          <div class="options">
+            <button id="btnEncrypt" class="caesar-button">Encrypt</button>
+            <div class="numeric-container">
+              <label>
+                Cipher shift:
+              </label>
+              <input
+                type="number"
+                min="1"
+                max="26"
+                id="numeric"
+                value="1"
+                class="number-selector"
+              />
+            </div>
+            <button id="btnDecrypt" class="caesar-button">Decrypt</button>
+          </div>
+          <textarea
+            id="output-field"
+            style="resize: none; overflow: hidden;"
+            class="text-field"
+            placeholder="Content to decrypt..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <h2>Made by: Stjepan Pavleković</h2>
+          <h2>Zagreb, Croatia</h2>
+          <h2>2020</h2>
+        </div>
+      </div>
+    </div>
+    <script src="source.js"></script>
+  </body>
+</html>
